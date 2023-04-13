@@ -143,30 +143,79 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <enableActivities>true</enableActivities>
+    <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
-    <enableHistory>true</enableHistory>
+    <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
-    <enableReports>true</enableReports>
-    <enableSearch>false</enableSearch>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
-    <label>Test</label>
+    <label>Master BitBucket</label>
     <nameField>
-        <label>Test Name</label>
-        <trackHistory>false</trackHistory>
+        <label>Master BitBucket Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>Tests</pluralLabel>
+    <pluralLabel>Master BitBuckets</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
-    <compactLayouts>
-        <fullName>Test</fullName>
-        <fields>Name</fields>
-        <fields>OwnerId</fields>
-        <label>Test</label>
-    </compactLayouts>
-
+    <fields>
+        <fullName>Master_BitBucket_Deploy_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Master BitBucket Deploy Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Passed</fullName>
+                    <default>false</default>
+                    <label>Passed</label>
+                </value>
+                <value>
+                    <fullName>Failed</fullName>
+                    <default>false</default>
+                    <label>Failed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <recordTypes>
+        <fullName>AMER</fullName>
+        <active>true</active>
+        <label>AMER</label>
+        <picklistValues>
+            <picklist>Master_BitBucket_Deploy_Status__c</picklist>
+            <values>
+                <fullName>Failed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Passed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>APAC</fullName>
+        <active>true</active>
+        <label>APAC</label>
+        <picklistValues>
+            <picklist>Master_BitBucket_Deploy_Status__c</picklist>
+            <values>
+                <fullName>Failed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Passed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+</CustomObject>
