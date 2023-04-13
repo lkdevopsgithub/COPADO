@@ -149,27 +149,99 @@
     <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>false</enableReports>
-    <enableSearch>false</enableSearch>
+    <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
-    <label>Test2</label>
+    <label>SFDC Desktop Development</label>
     <nameField>
-        <label>Test2 Name</label>
+        <label>SFDC Desktop Development Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>Test2s</pluralLabel>
+    <pluralLabel>SFDC Desktop Developments</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
     <fields>
-        <fullName>Field_1__c</fullName>
+        <fullName>Sprint__c</fullName>
         <externalId>false</externalId>
-        <label>Field 1</label>
-        <length>10</length>
+        <label>Sprint</label>
+        <length>100</length>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Project__c</fullName>
+        <externalId>false</externalId>
+        <label>Project</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WorkItem__c</fullName>
+        <externalId>false</externalId>
+        <label>WorkItem</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ScrumTeam__c</fullName>
+        <externalId>false</externalId>
+        <label>ScrumTeam</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ReleaseDate__c</fullName>
+        <externalId>false</externalId>
+        <label>ReleaseDate</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ReleaseName__c</fullName>
+        <externalId>false</externalId>
+        <label>ReleaseName</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SFDC_Desktop_Development_Deploy_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>SFDC Desktop Development Deploy Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Passed</fullName>
+                    <default>false</default>
+                    <label>Passed</label>
+                </value>
+                <value>
+                    <fullName>Failed</fullName>
+                    <default>false</default>
+                    <label>Failed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
 </CustomObject>
